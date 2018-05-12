@@ -1,5 +1,9 @@
 {
   "name": "gpmdp-output",
+  "repository": {
+    "type": "svn",
+    "url": "https://github.com/Notuom/gpmdp-output"
+  }
   "version": "1.0.0",
   "description": "Streaming helper for Google Play Music Desktop Player (GPMDP). Listens to the Playback interface of GPMDP and outputs formatted track information and album art files.",
   "main": "gpmdp_output.js",
