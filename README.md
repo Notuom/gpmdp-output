@@ -4,7 +4,7 @@ Streaming helper for Google Play Music Desktop Player (GPMDP).
 
 Listens to the Playback interface of GPMDP and outputs formatted track information and album art files.
 
-Very simple script but it's handy for streaming currently played song from GPMDP and doesn't require configuration unless you want to customize the output.
+Very simple script, but it's handy for streaming currently played song from GPMDP and it doesn't require configuration unless you want to customize the output.
 
 ## Features
 
@@ -12,19 +12,24 @@ Very simple script but it's handy for streaming currently played song from GPMDP
   * Customizable track information display
 * Output album art to a png file which can then be used in OBS Studio
   * Customizable resolution
-* Easy to use!
+* Easy to use! (kinda... 😉)
 
-## Setting up
+## Setting up Google Play Music Desktop Player
+
+Before using the script, you should make sure your GPMDP is ready to interact with it. Make sure the Playback API is enabled (Menu > Desktop Settings > Enable Playback API). Also make sure your firewall is configured properly by allowing access to Node.js and GPMDP if they ask for it.
+
+## Setting up and running the script
 
 If you have prior Node.js experience, this should be no problem. If you don't, I tried to make things as easy as possible :
 
-1. Install a recent version of [Node.js](https://nodejs.org/). Ensure the tools are installed in your PATH.
-2. Clone or download this repo.
-3. Execute the `install.bat` file (Windows) or `install.sh` file (Linux / macOS). You should be able to do that by double-clicking it.
-4. Execute the `gpmdp_output.bat` file (Windows) or `gpmdp_output.sh` file (Linux / macOS). You should be able to do that by double-clicking it.
-5. To close the script, use CTRL+C or close the command prompt window.
+1. Install a recent version of [Node.js](https://nodejs.org/). Ensure the tools are installed in your PATH (for Windows, this should be an option in the installer).
+2. Download this repo. ([Click here to download the latest version as a zip](https://github.com/Notuom/gpmdp-output/archive/master.zip))
+3. Extract somewhere you don't mind keeping it (for Windows, somewhere that doesn't require administrator access).
+4. Execute the `install.bat` file (Windows) or `install.sh` file (Linux / macOS). You should be able to do that by double-clicking it.
+5. Execute the `gpmdp_output.bat` file (Windows) or `gpmdp_output.sh` file (Linux / macOS). You should be able to do that by double-clicking it.
+6. To close the script, use CTRL+C or close the command prompt window.
 
-Steps 1 - 3 only have to be done once. After that, simply execute the relevant `gpmdp_output` file and let it run while GPMDP and your streaming application are open.
+Steps 1 - 4 only have to be done once. After that, simply execute the relevant `gpmdp_output` file and let it run while GPMDP and your streaming application are open.
 
 ## Adding the output to OBS Studio
 
@@ -34,7 +39,9 @@ To add the album art, add a new Image source and select the Current_Album_Art.pn
 
 ## Configuration
 
-Open the gpmdp_output.js file in a text editor and change the variables described at the beginning of the file.
+Open the gpmdp_output.js file in a text editor and change the variables described at the beginning of the file. This configuration allows you to change the track format, album art size and so forth.
+
+By default, all files will be written in the same folder as the script. This can also be changed by using the configuration.
 
 # Special thanks
 

@@ -1,1 +1,1 @@
-node gpmdp_output.js
+node index.js

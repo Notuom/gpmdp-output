@@ -12,8 +12,8 @@ const outputPattern = `%artist%
 %title%`;
 
 // The dimensions to resize the album art to
-const albumArtSizeWidth = 75;
-const albumArtSizeHeight = 75;
+const albumArtSizeWidth = 500;
+const albumArtSizeHeight = 500;
 
 // The file path to write current track information
 const trackFilePath = 'Current_Track.txt';

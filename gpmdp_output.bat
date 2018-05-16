@@ -1,1 +1,4 @@
-node gpmdp_output.js
+@echo off
+echo Launching script... (node index.js)
+call node index.js
+pause
